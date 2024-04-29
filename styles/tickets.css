@@ -49,30 +49,28 @@ header img {
 fieldset {
    /* margin-top: 1em; */
     margin-bottom: .5em;
-    padding-top: .5em;
+    padding: .5em 1em;
 }
 legend {
-    /* color: #931420; */
 	color: black;
     font-weight: bold;
     font-size: 85%;
-    margin-bottom: .5em;
-	margin-left: 2em;
+    padding-bottom: .5em;
+}
+label, input, select {
+	font-size: 90%;
 }
 label {
     float: left;
     width: 12em;
     text-align: right;
 }
-label, input, select {
-	font-size: 90%;
-}
 input, select {
     width: 15em;
     margin-left: .5em;
     margin-bottom: .5em;
 }
-input:required, input[required] {
+input:required, input:invalid {
 	border: 2px solid #800000;
 }
 input:valid {
@@ -84,25 +82,21 @@ input:invalid {
 br {
     clear: both;
 }
-#buttons input {
-	
-	width: 10em;
-	margin-top: .5em;
-	margin-bottom: 2em;
-}
-#radio label { 
+#radio label {
 	float: none;
 }
 #radio input {
 	width: auto;
-	margin-left: 4em;
-	margin-bottom: 2em;
+	margin-left: 3em;
 }
 #exp_month {
-	width: 6em;
+	width: 7em;
 }
 #exp_year {
-	width: 4em;
+	width: 5em;
+}
+#buttons input {
+	width: 10em;
 }
 
 /* the styles for the navigation menu */
